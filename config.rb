@@ -1,5 +1,3 @@
-Haml::TempleEngine.disable_option_validator!
-
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
@@ -7,7 +5,9 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-activate :livereload
+activate :livereload do |reload|
+  reload.no_swf = true
+end
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -45,6 +45,7 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 configure :build do
+  activate :gzip
   activate :asset_hash
   activate :minify_css
   activate :minify_javascript
