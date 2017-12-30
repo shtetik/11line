@@ -1,4 +1,4 @@
-11Line (c) by Pavel Kulikov
+11Line (c) by Nikolay Semernya
 
 11Line is licensed under a
 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
