@@ -14,6 +14,16 @@
     <h2 class="section__title">Методы обучения</h2>
     <p class="section__subtitle">В Школе-студии придерживаются классической методики преподавания.</p>
     <p class="section__subtitle">Группы формируются по уровню подготовленности: 1 уровень - для тех, у кого нет никакого предварительного обучения, и 2 уровень – для тех, у кого уже есть начальная база.</p>
+    <div class="grid" data-columns>
+      <%- (1..12).each do |i| %>
+        <%= image_tag "first_level/#{i}.jpg", class: 'image image--indented'%>
+      <% end %>
+    </div>
+    <div class="grid" data-columns>
+      <%- (1..9).each do |i| %>
+        <%= image_tag "second_level/#{i}.jpg", class: 'image image--indented'%>
+      <% end %>
+    </div>
     <p class="section__subtitle">Школа-студия также организует мастер-классы по живописи в Санкт-Петербурге и Флоренции. Темы мастер-классов “Портрет”, “Пленэр”.</p>
   </section>
   <section class="section section--teacher">

@@ -8,14 +8,23 @@
   flex-direction: column
   align-items: stretch
   justify-content: center
-  position:relative
+  position: relative
   padding: 0 14%
   min-height: 100vh
+
+  &__title
+    @extend %font-anonymous
+    @extend %font-size-title-2
+
+  &__subtitle
+    @extend %font-apercupro
+    @extend %font-size-subtitle
 
   &--main
     background-image: url('/images/intro.jpg')
     background-size: cover
     background-repeat: no-repeat
+
     .section__title
       @extend %font-apercupro
       @extend %font-size-title-1
@@ -23,34 +32,41 @@
 
   &--studio
     background-color: #d2c2c0
-    .section__title
-      @extend %font-anonymous
-      @extend %font-size-title-2
-      color #e8d9d9
+
+    .section__title,
+    .section__subtitle
+      color: #e8d9d9
+
   &--directions
     background-color: #e9d2c5
-    .section__title
-      @extend %font-anonymous
-      @extend %font-size-title-2
-      color #fbe5da
+
+    .section__title,
+    .section__subtitle
+      color: #fbe5da
 
   &--methods
     background-color: #f8fbff
-    .section__title
-      @extend %font-anonymous
-      @extend %font-size-title-2
-      color #d3dce2
+
+    .section__title,
+    .section__subtitle
+      color: #d3dce2
 
   &--teacher
     background-color: #b1bec9
+
+    .section__title,
+    .section__subtitle
+      color: #d3dce2
+
     .section__title
-      @extend %font-anonymous
-      @extend %font-size-title-2
-      color #d3dce2
+      margin-bottom: 1.42rem
+
+    .section__subtitle
+      @extend %font-size-title-4
 
   &--contacts
     background-color: #949aa8
-    .section__title
-      @extend %font-anonymous
-      @extend %font-size-title-2
-      color #c3c7cf
+
+    .section__title,
+    .section__subtitle
+      color: #c3c7cf
