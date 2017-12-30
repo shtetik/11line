@@ -1,0 +1,18 @@
+=media-only($media)
+  @if $media == mobile
+    @media #{$media--mobile}
+      @content
+  @else if $media == tablet
+    @media #{$media--tablet}
+      @content
+  @else if $media == desktop
+    @media #{$media--desktop}
+      @content
+  @else if $media == large-desktop
+    @media #{$media--large-desktop}
+      @content
+
+=media-not($media)
+  @if $media == mobile
+    @media #{$media--not-mobile}
+      @content

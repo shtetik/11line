@@ -1,0 +1,12 @@
+// Media breaks
+$break--mobile:   768px
+$break--tablet:  1024px
+$break--desktop: 1599px
+
+// Media queries
+$media--mobile:        "only screen and (max-width: #{$break--mobile - 1})"
+$media--tablet:        "only screen and (min-width: #{$break--mobile}) and (max-width: #{$break--tablet - 1})"
+$media--desktop:       "only screen and (min-width: #{$break--tablet}) and (max-width: #{$break--desktop - 1})"
+$media--large-desktop: "only screen and (min-width: #{$break--desktop})"
+
+$media--not-mobile:    "only screen and (min-width: #{$break--mobile})"
