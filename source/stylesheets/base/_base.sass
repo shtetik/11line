@@ -8,11 +8,28 @@ html
 body
   margin: 0
 
+body::-webkit-scrollbar
+  width: 0.4rem
+
+body::-webkit-scrollbar-track
+  background-color: #ffffff
+
+body::-webkit-scrollbar-thumb
+  background-color: #d2c2c0
+
 h2
-  margin: 4.21rem 0 1rem
+  margin: 0 0 1rem
+
+h3
+  margin: 0 0 1.57rem
 
 p
-  margin: 0 0 1.57rem
+  margin-top: 0
+
+a
+  text-decoration: none
+  &:hover, &:focus
+    text-decoration: underline
 
 main
   position: relative

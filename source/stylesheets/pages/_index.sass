@@ -6,10 +6,10 @@
 .section
   display: flex
   flex-direction: column
-  align-items: stretch
+  align-items: left
   justify-content: center
   position: relative
-  padding: 0 14%
+  padding: 4.21rem 14%
   min-height: 100vh
 
   &__title
@@ -19,6 +19,10 @@
   &__subtitle
     @extend %font-apercupro
     @extend %font-size-subtitle
+
+  &__text
+    @extend %font-apercupro
+    @extend %font-size-text
 
   &--main
     background-image: url('/images/intro.jpg')
@@ -37,6 +41,12 @@
     .section__subtitle
       color: #e8d9d9
 
+    .section__subtitle
+      width: 60vw
+
+    .section__text
+      color: #998c8c
+
   &--directions
     background-color: #e9d2c5
 
@@ -51,18 +61,42 @@
     .section__subtitle
       color: #d3dce2
 
+    .section__subtitle:nth-last-of-type(1)
+      margin: 3.26rem 0 7.26rem
+
+    .section__text-grid:first-of-type
+      margin: 1.21rem 0 4.21rem
+
+    .section__text-grid:nth-last-of-type(2)
+      margin: 3.16rem 0 4.21rem
+
+    .section__text
+      color: #a1aeb2
+
+    .section__text--left
+      @extend %font-size-title-3
+      color: #d3dce2
+
   &--teacher
     background-color: #b1bec9
+    padding-bottom: 0
 
     .section__title,
     .section__subtitle
       color: #d3dce2
+
+    .section__subtitle:nth-last-of-type(1)
+      margin-bottom: 2.84rem
 
     .section__title
       margin-bottom: 1.42rem
 
     .section__subtitle
       @extend %font-size-title-4
+      width: 60vw
+
+    .section__text
+      color: #606e82
 
   &--contacts
     background-color: #949aa8
@@ -70,3 +104,6 @@
     .section__title,
     .section__subtitle
       color: #c3c7cf
+
+    .section__subtitle:nth-last-of-type(2)
+      margin-bottom: 0

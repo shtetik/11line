@@ -1,0 +1,19 @@
+.text-grid
+  display: flex
+  flex-wrap: wrap
+
+  &--gutters
+    margin: -5.8vw 0 0 -5.8vw
+
+    > .text-grid__cell
+      padding: 5.8vw 0 0 5.8vw
+
+.text-grid__cell
+  flex: 1
+
+  &--1of2
+    +media-only(mobile)
+      flex: 0 0 100%
+    +media-not(mobile)
+      flex: 0 0 50%
+
