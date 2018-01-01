@@ -1,3 +1,34 @@
-<header class="header">
-
+<header>
+  <div class="logo">
+    <% link_to '#main' do %>
+      <%= inline_svg 'icons/logo.svg' %>
+    <% end %>
+  </div>
+  <nav class="menu">
+    <% content_tag :button, class: 'menu__btn js-menu-btn' do %>
+      <%= inline_svg 'icons/menu.svg' %>
+    <% end %>
+    <ul class="menu__list" id="js-menu">
+      <li class="menu__list__item">
+        <% content_tag :button, class: 'menu__list__btn js-menu-btn' do %>
+          <%= inline_svg 'icons/cross.svg' %>
+        <% end %>
+      </li>
+      <li class="menu__list__item">
+        <%= link_to 'О студии', '#studio', class: 'menu__list__item__link'%>
+      </li>
+      <li class="menu__list__item">
+        <%= link_to 'Направления', '#directions', class: 'menu__list__item__link'%>
+      </li>
+      <li class="menu__list__item">
+        <%= link_to 'Методы обучения', '#methods', class: 'menu__list__item__link'%>
+      </li>
+      <li class="menu__list__item">
+        <%= link_to 'О преподавателе', '#teacher', class: 'menu__list__item__link'%>
+      </li>
+      <li class="menu__list__item">
+        <%= link_to 'Контакты', '#contacts', class: 'menu__list__item__link'%>
+      </li>
+    </ul>
+  </nav>
 </header>
