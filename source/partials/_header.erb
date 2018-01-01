@@ -1,11 +1,11 @@
 <header>
-  <div class="logo">
+  <div class="logo js-tween">
     <% link_to '#main' do %>
       <%= inline_svg 'icons/logo.svg' %>
     <% end %>
   </div>
   <nav class="menu">
-    <% content_tag :button, class: 'menu__btn js-menu-btn' do %>
+    <% content_tag :button, class: 'menu__btn js-menu-btn js-tween' do %>
       <%= inline_svg 'icons/menu.svg' %>
     <% end %>
     <ul class="menu__list" id="js-menu">
