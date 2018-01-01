@@ -1,4 +1,4 @@
-module ApplicationHelpers
+module InlineSvgHelpers
   def inline_svg(filename, options = {})
     root = Middleman::Application.root
     images_path = config[:images_dir]
