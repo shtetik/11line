@@ -5,11 +5,11 @@
   <section id="studio" class="section section--studio">
     <h2 class="section__title">О Студии</h2>
     <p class="section__subtitle">Студия основана в 1994 г. и функционирует в тесной связи с Санкт-Петербургским Государственным академическим институтом живописи, скульптуры и архитектуры им. И.Е.Репина.</p>
-    <div class="section__text-grid text-grid text-grid--gutters">
-      <div class="section__text text-grid__cell text-grid__cell--1of2">
+    <div class="section__grid grid grid--gutters">
+      <div class="section__text grid__cell grid__cell--1of2">
         <p>За все годы существования студии многие ее выпускники поступили и закончили разные факультеты Академии художеств им. И. Е. Репина: живописи, графики, скульптуры и архитектуры, а также другие Вузы: СПГХПА им. А.Л. Штиглица, РГПУ им. А.И. Герцена, СПХУ им. Н. К. Рериха, лицей им. Б. В. Йогансона, Театрально-художественный институт, Институт культуры и др.</p>
       </div>
-      <div class="section__text text-grid__cell text-grid__cell--1of2">
+      <div class="section__text grid__cell grid__cell--1of2">
         <p>В студии нередко обучаются также и иностранные учащиеся из Германии, Швейцарии, Греции, США, Англии, Китая.</p>
         <p>За 2 года обучения студийцы с нуля готовятся к поступлению в Академию Художеств им. И. Е. Репина. Однако предусматривается и индивидуальный подход, в зависимости от целей самих учащихся.</p>
       </div>
@@ -18,33 +18,43 @@
   <section id="directions" class="section section--directions">
     <h2 class="section__title">Направления</h2>
     <p class="section__subtitle">Обучение изобразительному искусству в классической традиции</p>
+    <div class="section__grid section__grid--collapse grid">
+      <% ['Рисунок', 'Живопись', 'Анатомическая Штудия', 'Композиция'].each_with_index do |text, i|%>
+        <div class="grid__cell grid__cell--1of4">
+          <%= image_tag "paintings/directions/#{i+1}.jpg", class: 'image'%>
+          <div class="section__image-title">
+            <%= text%>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </section>
   <section id="methods" class="section section--methods">
     <h2 class="section__title">Методы обучения</h2>
     <p class="section__subtitle">В Школе-студии придерживаются классической методики преподавания.</p>
     <p class="section__subtitle">Группы формируются по уровню подготовленности: 1 уровень - для тех, у кого нет никакого предварительного обучения, и 2 уровень – для тех, у кого уже есть начальная база.</p>
-    <div class="section__text-grid text-grid">
-      <div class="text-grid__cell text-grid__cell--1of2">
+    <div class="section__grid grid">
+      <div class="grid__cell grid__cell--1of2">
         <p class="section__text section__text--left">1 уровень</p>
       </div>
-      <div class="text-grid__cell text-grid__cell--1of2">
+      <div class="grid__cell grid__cell--1of2">
         <p class="section__text section__text--right"> Обучение начинается с рисунка геометрических предметов, драпировок, натюрмортов и после выполнения этих заданий, паралелльно с рисунком начинается преподавание живописи. В дополнение к вышеуказанным заданиям проводятся анатомические штудии головы, гипсовые головы, детали лица, копирование работ старых мастеров. Композиция выполняется по желанию учащихся.</p>
       </div>
     </div>
-    <div class="image-grid" data-columns>
+    <div class="mason-grid" data-columns>
       <%- (1..12).each do |i| %>
         <%= image_tag "paintings/training_first/#{i}.jpg", class: 'image image--indented'%>
       <% end %>
     </div>
-    <div class="section__text-grid text-grid">
-      <div class="text-grid__cell text-grid__cell--1of2">
+    <div class="section__grid grid">
+      <div class="grid__cell grid__cell--1of2">
         <p class="section__text section__text--left">2 уровень</p>
       </div>
-      <div class="text-grid__cell text-grid__cell--1of2">
+      <div class="grid__cell grid__cell--1of2">
         <p class="section__text section__text--right">Работа с живой моделью по рисунку и живописи: штудия живой головы, анатомические штудии человеческого тела, обнаженная модель, копирование и композиция.</p>
       </div>
     </div>
-    <div class="image-grid" data-columns>
+    <div class="mason-grid" data-columns>
       <%- (1..9).each do |i| %>
         <%= image_tag "paintings/training_second/#{i}.jpg", class: 'image image--indented'%>
       <% end %>
@@ -54,22 +64,22 @@
   <section id="teacher" class="section section--teacher">
     <h2 class="section__title">О преподавателе</h2>
     <h3 class="section__subtitle">Сергей Васильевич Трепак</h3>
-    <div class="section__text-grid text-grid text-grid--gutters">
-      <div class="section__text text-grid__cell text-grid__cell--1of2">
+    <div class="section__grid grid grid--gutters">
+      <div class="section__text grid__cell grid__cell--1of2">
         <p>Выпускник Государственного академического института живописи, скульптуры и архитектуры им. И.Е.Репина г. Санкт-Петербурга, факультета живописи.</p>
         <p>В 1994 г. закончил мастерскую монументальной живописи под руководством Заслуженного художника СССР, профессора, академика А. А. Мыльникова</p>
         <p>Член Союза художников России</p>
         <p>С 1994 г. ведет свою Школу–студию «11-я линия»</p>
         <p>Преподавал на кафедре живописи Санкт-Петербургской Государственной художественно-промышленной академии им. А. Л. Штиглица. 2 года преподавал живопись в Италии во Флоренции.</p>
       </div>
-      <div class="section__text text-grid__cell text-grid__cell--1of2">
+      <div class="section__text grid__cell grid__cell--1of2">
         <p>Участник проекта “Лучшие люди Санкт-Петербурга”, посвященного трехсотлетию города. Портреты генерала-лейтенанта А. И. Ефремова, начальника Северо-Западного региона МЧС и В. Н. Зайцева, директора Российской Национальной библиотеки в Санкт-Петербурге</p>
         <p>Учавствовал в росписи Троицкого собора в Ростове-на-Дону, руководил работами по монументальным декоративно-мозаичным панно, учавствовал в осуществлении мозаики “Геракл” для Сочинской Олимпиады.</p>
         <p>Участник многих выставок в России и за рубежом: Франция, Германия, Швеция, Испания, Англия, Китай.</p>
       </div>
     </div>
     <h3 class="section__subtitle">Работы С.В. Трепака</h3>
-    <div class="image-grid" data-columns>
+    <div class="mason-grid" data-columns>
       <%- (1..8).each do |i| %>
         <%= image_tag "paintings/works/#{i}.jpg", class: 'image image--indented'%>
       <% end %>

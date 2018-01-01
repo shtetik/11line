@@ -9,7 +9,7 @@
   align-items: left
   justify-content: center
   position: relative
-  padding: 4.21rem 14%
+  padding: 4.21rem 14vw
   min-height: 100vh
 
   &__title
@@ -23,6 +23,16 @@
   &__text
     @extend %font-apercupro
     @extend %font-size-text
+
+  &__image-title
+    @extend %font-apercupro
+    @extend %font-size-title-5
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate3d(-50%, -50%, 0)
+    color: #ffffff
+    text-align: center
 
   &--main
     background-image: url('/images/intro.jpg')
@@ -54,6 +64,12 @@
     .section__subtitle
       color: #fbe5da
 
+    .section__title
+      margin-bottom: 0.17rem
+
+    .section__subtitle
+      margin-bottom: 2.37rem
+
   &--methods
     background-color: #f8fbff
 
@@ -65,10 +81,10 @@
       margin: 3.26rem 0 7.26rem
       color: #a1aeb2
 
-    .section__text-grid:first-of-type
+    .section__grid:first-of-type
       margin: 1.21rem 0 4.21rem
 
-    .section__text-grid:nth-last-of-type(2)
+    .section__grid:nth-last-of-type(2)
       margin: 3.16rem 0 4.21rem
 
     .section__text
@@ -108,3 +124,7 @@
 
     .section__subtitle:nth-last-of-type(2)
       margin-bottom: 0
+
+.section__grid--collapse
+  margin-left: -14vw
+  margin-right: -14vw
