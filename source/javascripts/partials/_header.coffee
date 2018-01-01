@@ -14,7 +14,6 @@ $ ->
       .triggerHook(0)
       .setTween(TweenMax.to('.js-tween *', 1, { fill: color }))
       .addTo(controller)
-      .addIndicators()
 
 
   # Header menu open/close
