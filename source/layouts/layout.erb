@@ -8,9 +8,11 @@
     <%= stylesheet_link_tag "main" %>
   </head>
   <body>
+    <%= partial "partials/header" %>
     <main role="main">
       <%= yield %>
     </main>
+    <%= partial "partials/footer" %>
     <%= javascript_include_tag "main" %>
   </body>
 </html>

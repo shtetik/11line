@@ -1,0 +1,17 @@
+<footer class="footer">
+  <div class="creators">
+    <div class="creator creator--designer">
+      <span>Дизайн</span>
+      <%= link_to '1503design', 'https://1503design.com/', class: 'creator__link', target: :_blank %>
+    </div>
+    <div class="creator creator--developer">
+      <span>Разработка</span>
+      <%= link_to 'Pavel Kulikov', 'https://github.com/shtetik', class: 'creator__link', target: :_blank %>
+    </div>
+  </div>
+  <div class="social">
+    <% link_to 'https://vk.com/11linestudio', class: 'social__link', target: :_blank do %>
+      <%= inline_svg 'svg/vk.svg', class: 'social__link__icon' %>
+    <% end %>
+  </div>
+</footer>

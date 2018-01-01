@@ -1,0 +1,45 @@
+.footer
+  display: flex
+  justify-content: space-between
+  padding: 0.8rem 2.5vw
+  background-color: #949aa8
+
+.creators
+  display: flex
+
+.creator
+  &--designer,
+  &--developer,
+  &__link
+    color: #606e82
+
+  &--designer,
+  &--developer
+    @extend %font-apercupro
+    @extend %font-size-text
+
+  &--developer
+    margin-left: 4.5rem
+
+  &__link
+    transition: color 0.3s
+    &:hover, &:focus
+      color: #c3c7cf
+      text-decoration: none
+      transition: color 0.3s
+
+
+.social
+  &__link
+    margin-left: 0.8rem
+    &:hover, &:focus
+      text-decoration: none
+    &__icon
+      width: 1.6rem
+      height: 1.6rem
+      path
+        transition: fill 0.3s
+      &:hover, &:focus
+        path
+          fill: #c3c7cf
+          transition: fill 0.3s
