@@ -16,3 +16,14 @@
   @if $media == mobile
     @media #{$media--not-mobile}
       @content
+
+=media-down($media)
+  @if $media == mobile
+    @media #{$media--down-mobile}
+      @content
+  @else if $media == tablet
+    @media #{$media--down-tablet}
+      @content
+  @else if $media == desktop
+    @media #{$media--down-desktop}
+      @content

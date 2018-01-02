@@ -11,6 +11,9 @@
   position: relative
   padding: 4.21rem 14vw
   min-height: 100vh
+  +media-down(tablet)
+    padding-left: 10vw
+    padding-right: 10vw
 
   &__title
     @extend %font-anonymous
@@ -53,6 +56,8 @@
 
     .section__subtitle
       width: 60vw
+      +media-down(tablet)
+        width: 80%
 
     .section__text
       color: #998c8c
@@ -102,15 +107,19 @@
     .section__subtitle
       color: #d3dce2
 
-    .section__subtitle:nth-last-of-type(1)
-      margin: 1.84rem 0 2.84rem
-
     .section__title
       margin-bottom: 1.42rem
+      +media-down(tablet)
+        font-size: 4.4rem
+
+    .section__subtitle:nth-last-of-type(1)
+      margin: 1.84rem 0 2.84rem
 
     .section__subtitle
       @extend %font-size-title-4
       width: 60vw
+      +media-down(tablet)
+        width: 100%
 
     .section__text
       color: #606e82
