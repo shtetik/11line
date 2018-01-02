@@ -30,6 +30,9 @@ $ ->
   setScrollPosition = ->
     scrollPosition = $(window).scrollTop()
 
+  if Modernizr.mq('screen and (max-width:1024px)')
+    closeMenu()
+
   # Header menu open/close
   $('.js-menu-btn').on 'click', ->
     isCanOpenWhenHover = false
