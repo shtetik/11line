@@ -15,10 +15,41 @@ $ ->
       .setTween(TweenMax.to('.js-tween *', 1, { fill: color }))
       .addTo(controller)
 
+  isCanOpenWhenHover = false
+  scrollPosition = 0
+
+  closeMenu = ->
+    $('#js-menu').removeClass('menu__list--open')
+
+  openMenu = ->
+    $('#js-menu').addClass('menu__list--open')
+
+  toggleMenu = ->
+    $('#js-menu').toggleClass('menu__list--open')
+
+  setScrollPosition = ->
+    scrollPosition = $(window).scrollTop()
 
   # Header menu open/close
   $('.js-menu-btn').on 'click', ->
-    $('#js-menu').toggleClass('menu__list--open')
+    isCanOpenWhenHover = false
+    toggleMenu()
+
+  $('.js-menu-btn--hoverable').on 'mouseenter', ->
+    if isCanOpenWhenHover
+      setScrollPosition()
+      openMenu()
+
+  $('.js-menu-btn--hoverable').on 'mouseover', ->
+    isCanOpenWhenHover = true
 
   $('.menu__list__item__link').on 'click', ->
-    $('#js-menu').removeClass('menu__list--open')
+    closeMenu()
+
+  $(window).on 'scroll', ->
+    scroll = $(window).scrollTop()
+    screenHeight = $(window).height()
+    if Math.abs(scroll - scrollPosition) > screenHeight / 2
+      isCanOpenWhenHover = true
+      setScrollPosition()
+      closeMenu()

@@ -5,10 +5,10 @@
     <% end %>
   </div>
   <nav class="menu">
-    <% content_tag :button, class: 'menu__btn js-menu-btn js-tween' do %>
+    <% content_tag :button, class: 'menu__btn js-menu-btn js-menu-btn--hoverable js-tween' do %>
       <%= inline_svg 'icons/menu.svg' %>
     <% end %>
-    <ul class="menu__list" id="js-menu">
+    <ul class="menu__list menu__list--open" id="js-menu">
       <li class="menu__list__item">
         <% content_tag :button, class: 'menu__list__btn js-menu-btn' do %>
           <%= inline_svg 'icons/cross.svg' %>
