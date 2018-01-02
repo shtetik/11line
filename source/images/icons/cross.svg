@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
 <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 23.0163574 23.0164185" enable-background="new 0 0 23.0163574 23.0164185" xml:space="preserve">
@@ -9,7 +20,7 @@
 			</sliceSourceBounds>
 	</sfw>
 </metadata>
-<polygon fill="#949AA8" points="23.0163555,2.2500043 20.7663555,-0.0000567 11.5081758,9.2580614 2.2499974,-0.0000567
-	-0.0000025,2.2500043 9.2580538,11.5081224 -0.0000025,20.7662392 2.2499974,23.0163612 11.5081758,13.7582445
+<polygon fill="#949AA8" points="23.0163555,2.2500043 20.7663555,-0.0000567 11.5081758,9.2580614 2.2499974,-0.0000567 
+	-0.0000025,2.2500043 9.2580538,11.5081224 -0.0000025,20.7662392 2.2499974,23.0163612 11.5081758,13.7582445 
 	20.7663555,23.0163612 23.0163555,20.7662392 13.7582979,11.5081224 "/>
 </svg>

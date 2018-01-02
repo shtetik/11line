@@ -15,6 +15,7 @@ $ ->
       .setTween(TweenMax.to('.js-tween *', 1, { fill: color }))
       .addTo(controller)
 
+  # Header menu open/close
   isCanOpenWhenHover = false
   scrollPosition = 0
 
@@ -33,7 +34,6 @@ $ ->
   if Modernizr.mq('screen and (max-width:1024px)')
     closeMenu()
 
-  # Header menu open/close
   $('.js-menu-btn').on 'click', ->
     isCanOpenWhenHover = false
     toggleMenu()

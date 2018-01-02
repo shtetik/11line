@@ -1,0 +1,24 @@
+.arrow
+  position: fixed
+  z-index: 100
+  left: 50%
+  bottom: 2rem
+  width: 2.18rem
+  height: 2.18rem
+  margin-left: -25px
+  opacity: 1
+  cursor: pointer
+  background: url('/images/icons/arrow_down.svg') no-repeat
+  animation: arrow 1s infinite
+  +media-only(mobile)
+    bottom: 2rem
+  &--hide
+    display: none
+
+@keyframes arrow
+  0%
+    transform: translateY(0)
+  50%
+    transform: translateY(6px)
+  100%
+    transform: translateY(0)

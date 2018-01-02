@@ -14,7 +14,7 @@ module InlineSvgHelpers
         svg.set(:class, options[:class])
       end
 
-      doc.to_xml
+      svg.to_xml
     else
       "<!-- SVG file not found: #{not_found_message(filename)} -->".html_safe
     end
