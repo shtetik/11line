@@ -2,9 +2,14 @@
 Website of the school-studio 11Line. Teaching fine arts in the classical traditions.
 
 # The Author
-Developed by Pavel Kulikov (shtetik) in 2017.
+Code with 🍺 by Pavel Kulikov (shtetik) in 2017.
 
 <shtetik@gmail.com>
+
+# Stack
+* Ruby 2.4.2, Middleman
+* Coffeescript, ERB, Sass,  SVG
+* Netlify
 
 # License
 Code licensed under an [MIT-style License](https://github.com/shtetik/11line/blob/master/LICENSE).
