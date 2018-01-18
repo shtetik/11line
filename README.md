@@ -8,7 +8,7 @@ Code with 🍺 by Pavel Kulikov (shtetik) in 2017.
 
 # Stack
 * Ruby 2.4.2, Middleman
-* Coffeescript, ERB, Sass,  SVG, Modernizr, Zepto, TweenMax
+* Coffeescript, ERB, Sass, SVG, Modernizr, Zepto, TweenMax, ScrollMagic, Salvattore
 * Netlify
 
 # License
